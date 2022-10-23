@@ -40,6 +40,7 @@ class Dimensions {
 
   // Font
   static double font20 = screenHeight / height20ScaleFactor;
+  static double font15 = screenHeight / height15ScaleFactor;
 
   // Radius
   static double radius15 = screenHeight / height15ScaleFactor;
@@ -50,6 +51,13 @@ class Dimensions {
   static double iconSize24ScaleFactor = screenHeight / 24;
 
   static double iconSize24 = screenHeight / iconSize24ScaleFactor;
+
+  // List View Size
+  static double listViewImgSizeScaleFactor = screenWidth / 120;
+  static double listViewTextContSizeScaleFactor = screenWidth / 120;
+
+  static double listViewImgSize = screenWidth / listViewImgSizeScaleFactor;
+  static double listViewTextContSize = screenWidth / listViewTextContSizeScaleFactor;
 
   // Page View
   static double pageViewScaleFactor = screenHeight / 320;
