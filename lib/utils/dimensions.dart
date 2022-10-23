@@ -59,6 +59,11 @@ class Dimensions {
   static double listViewImgSize = screenWidth / listViewImgSizeScaleFactor;
   static double listViewTextContSize = screenWidth / listViewTextContSizeScaleFactor;
 
+  // Popular Food
+  static double popularFoodImgSizeScaleFactor = screenHeight / 350;
+
+  static double popularFoodImgSize = screenHeight / popularFoodImgSizeScaleFactor;
+
   // Page View
   static double pageViewScaleFactor = screenHeight / 320;
   static double pageViewContainerScaleFactor = screenHeight / 220;

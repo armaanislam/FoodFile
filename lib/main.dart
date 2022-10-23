@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodfile/home/main_food_page.dart';
+import 'package:foodfile/pages/home/main_food_page.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
