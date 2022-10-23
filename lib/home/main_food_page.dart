@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:foodfile/home/food_page_body.dart';
 import 'package:foodfile/utils/colors.dart';
 import 'package:foodfile/widgets/big_text.dart';
 import 'package:foodfile/widgets/small_text.dart';
@@ -27,10 +28,12 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     children: [
                       Column(
                         children: [
-                          BigText(text: "Bangladesh", color: AppColors.mainColor),
+                          BigText(
+                              text: "Bangladesh", color: AppColors.mainColor),
                           Row(
                             children: [
-                              SmallText(text: "Narshingdi", color: Colors.black54),
+                              SmallText(
+                                  text: "Narshingdi", color: Colors.black54),
                               Icon(Icons.arrow_drop_down_rounded)
                             ],
                           )
@@ -42,13 +45,14 @@ class _MainFoodPageState extends State<MainFoodPage> {
                         child: Icon(Icons.search, color: Colors.white),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Colors.blue,
+                          color: AppColors.mainColor,
                         ),
-                      )
+                      ),
                     ],
                   )),
             ),
-          )
+          ),
+          FoodPageBody(),
         ],
       ),
     );
