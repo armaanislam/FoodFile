@@ -7,11 +7,14 @@ class Dimensions {
   // Height
   static double height5ScaleFactor = screenHeight / 5;
   static double height10ScaleFactor = screenHeight / 10;
+  static double height14ScaleFactor = screenHeight / 14;
   static double height15ScaleFactor = screenHeight / 15;
   static double height20ScaleFactor = screenHeight / 20;
+  static double height26ScaleFactor = screenHeight / 26;
   static double height30ScaleFactor = screenHeight / 30;
   static double height35ScaleFactor = screenHeight / 35;
   static double height45ScaleFactor = screenHeight / 45;
+  static double height100ScaleFactor = screenHeight / 100;
 
   static double height5 = screenHeight / height5ScaleFactor;
   static double height10 = screenHeight / height10ScaleFactor;
@@ -20,6 +23,7 @@ class Dimensions {
   static double height30 = screenHeight / height30ScaleFactor;
   static double height35 = screenHeight / height35ScaleFactor;
   static double height45 = screenHeight / height45ScaleFactor;
+  static double height100 = screenHeight / height100ScaleFactor;
 
   // Width
   static double width5ScaleFactor = screenWidth / 5;
@@ -39,8 +43,10 @@ class Dimensions {
   static double width45 = screenWidth / width45ScaleFactor;
 
   // Font
+  static double font14 = screenHeight / height14ScaleFactor;
   static double font20 = screenHeight / height20ScaleFactor;
   static double font15 = screenHeight / height15ScaleFactor;
+  static double font26 = screenHeight / height26ScaleFactor;
 
   // Radius
   static double radius15 = screenHeight / height15ScaleFactor;
@@ -49,7 +55,9 @@ class Dimensions {
 
   // Icon Size
   static double iconSize24ScaleFactor = screenHeight / 24;
+  static double iconSize16ScaleFactor = screenHeight / 16;
 
+  static double iconSize16 = screenHeight / iconSize16ScaleFactor;
   static double iconSize24 = screenHeight / iconSize24ScaleFactor;
 
   // List View Size
