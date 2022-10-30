@@ -57,6 +57,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
           ),
           const Expanded(
             child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
               child: FoodPageBody(),
             ),
           ),
