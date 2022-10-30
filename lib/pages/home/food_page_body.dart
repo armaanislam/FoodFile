@@ -49,7 +49,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       children: [
         // Slider section
         GetBuilder<PopularProductController>(builder: (popularProducts) {
-          return Container(
+          return popularProducts.isLoaded? Container(
             // color: Colors.redAccent,
             height: Dimensions.pageView,
             child: PageView.builder(
@@ -58,6 +58,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 itemBuilder: (context, position) {
                   return _buildPageItem(position, popularProducts.popularProductList[position]);
                 }),
+          ) : const CircularProgressIndicator(
+            color: AppColors.mainColor,
           );
         }),
         // Dots
@@ -82,7 +84,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             crossAxisAlignment: CrossAxisAlignment.end,
             // Everything comes at bottom
             children: [
-              BigText(text: "Popular"),
+              BigText(text: "Recommended"),
               SizedBox(width: Dimensions.width10),
               Container(
                 margin: const EdgeInsets.only(bottom: 3),
